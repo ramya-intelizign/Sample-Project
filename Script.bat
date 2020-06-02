@@ -1,3 +1,3 @@
 echo "Helloworld"
 echo %*
-xcopy /s E:\bird_sample-master\bird_sample-master %1\bird_sample
+echo D|xcopy E:\Amarwork\index_files %1\index_files /f /e /h
