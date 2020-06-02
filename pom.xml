@@ -15,7 +15,7 @@
             <version> 4.8</version>
         </dependency>
     </dependencies>
-
+<build>
     <plugins>
         <plugin></plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -37,7 +37,7 @@
    </executions> 
         </plugin>
     </plugins>
-    
+    </build>
     <properties>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
