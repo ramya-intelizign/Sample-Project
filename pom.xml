@@ -48,6 +48,9 @@
                         </goals>
                         <configuration>
                             <executable>${basedir}/Script.bat</executable>
+                             <arguments>
+                                <argument>${argument1}</argument>
+                            </arguments>
                         </configuration>
                     </execution>
             </executions> 
@@ -57,5 +60,6 @@
     <properties>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
+    <argument1>Raghul</argument1>
 </properties>
 </project>
