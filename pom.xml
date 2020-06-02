@@ -18,7 +18,7 @@
             <artifactId>maven-antrun-plugin</artifactId>
             <version>1.3</version>
             <executions>
-                <execution>
+                <!-- <execution>
                     <phase>generate-sources</phase>
                         <configuration>
                             <tasks>
@@ -37,7 +37,17 @@
                     <goals>
                         <goal>run</goal>
                     </goals>
-                </execution>
+                </execution> -->
+                <execution><!-- Run our version calculation script -->
+                        <id>Version Calculation</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>${basedir}/Script.bat</executable>
+                        </configuration>
+                    </execution>
             </executions> 
         </plugin>
     </plugins>
