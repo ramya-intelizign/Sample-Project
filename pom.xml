@@ -49,7 +49,7 @@
                         <configuration>
                             <executable>${basedir}/Script.bat</executable>
                              <arguments>
-                                <argument>${argument1}</argument>
+                                <argument>${basedir}</argument>
                             </arguments>
                         </configuration>
                     </execution>
