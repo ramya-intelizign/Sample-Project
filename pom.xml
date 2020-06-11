@@ -10,31 +10,16 @@
 
     <dependencies>  
         <dependency>  
-            <artifactId>exec-maven-plugin</artifactId>
             <groupId>org.codehaus.mojo</groupId>
-            <version>1.3</version>
-            <executions>
-                <execution><!-- Run our version calculation script -->
-                        <id>Version Calculation</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                        <configuration>
-                            <executable>${basedir}/Script.bat</executable>
-                             <arguments>
-                                <argument>${basedir}</argument>
-                            </arguments>
-                        </configuration>
-                    </execution>
-            </executions>   
+            <artifactId>exec-maven-plugin</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${basedir}/Script.bat</systemPath>  
         </dependency>  
     </dependencies>
     <build>
         <plugins>
             <plugin>
-                <!-- <groupId>org.apache.maven.plugins</groupId> -->
-                <!-- <artifactId>maven-antrun-plugin</artifactId> -->
                 <artifactId>exec-maven-plugin</artifactId>
                     <groupId>org.codehaus.mojo</groupId>
                 <version>1.3</version>
