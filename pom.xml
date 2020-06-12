@@ -38,6 +38,15 @@
                             </configuration>
                         </execution>
                 </executions> 
+                <dependencies>
+                    <dependency>
+                        <!-- DECLARES plugin dependency, see reference above -->
+                        <groupId>your-group</groupId>
+                        <artifactId>your-artifact</artifactId>
+                        <type>exe</type>
+                        <version>your-version</version>
+                    </dependency>
+                    </dependencies> 
             </plugin>
         </plugins>
     </build>
