@@ -8,14 +8,7 @@
     <artifactId>AWC_Build_Packages</artifactId>
     <version>1.0</version>
 
-    <dependencies>  
-        <dependency>  
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <scope>system</scope>
-            <version>1.0</version>
-            <systemPath>${basedir}/Script.bat</systemPath>  
-        </dependency>  
+    <dependencies>    
     </dependencies>
     <build>
         <plugins>
